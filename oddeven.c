@@ -3,9 +3,14 @@ int main()
 {
 int a;
 scanf("%d", &a);
-if (a%2==0)
+if (a>0 && a%2==0)
 	printf("\nThe given number %d  is even",a);
-else  
+else if(a>0 && a%2!=0)
 	printf("\nThe number %d is odd" ,a);
-return 0;
+else if(a==0)
+	printf("\nThe number is zero");
+else 
+	printf("The given number is negative");
+
+	return 0;
 }
